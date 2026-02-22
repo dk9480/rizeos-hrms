@@ -22,7 +22,7 @@ const Profile = () => {
         return;
       }
 
-      const response = await axios.get('http://localhost:5000/api/users/profile', {
+      const response = await axios.get('https://rizeos-api.onrender.com/api/users/profile', {
         headers: { Authorization: `Bearer ${token}` }
       });
       
@@ -237,5 +237,6 @@ const Profile = () => {
     </div>
   );
 };
+
 
 export default Profile;
