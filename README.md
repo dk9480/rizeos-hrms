@@ -88,3 +88,61 @@ RizeOS is a next-generation HRMS platform that combines **AI-powered workforce i
 ### Test Credentials
 Email: admin@techsolutions.com
 Password: Password123!
+
+
+
+---
+
+## 💻 Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB Atlas account
+- npm or yarn
+
+### Clone Repository
+```bash
+git clone https://github.com/dk9480/rizeos-hrms.git
+cd rizeos-hrms
+
+```
+
+## 🚀 Setup & Installation Guide
+
+Follow the steps below to run the project locally.
+
+---
+
+## 🔧 Backend Setup
+
+```bash
+cd server
+npm install
+```
+
+### 🔧 Backend Environment Setup
+
+Create a `.env` file inside the `server` directory:
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+NODE_ENV=development
+```
+
+### ▶ Start Backend Server
+
+```bash
+npm run dev
+```
+
+### 🎨 Frontend Setup
+
+```bash
+cd client
+npm install
+npm start
+The app will open at:
+http://localhost:3000
+```
