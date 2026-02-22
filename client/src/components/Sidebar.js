@@ -5,7 +5,6 @@ import {
   Users, 
   CheckSquare, 
   BarChart3,
-  Settings,
   LogOut
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -60,5 +59,6 @@ const Sidebar = () => {
     </div>
   );
 };
+
 
 export default Sidebar;
