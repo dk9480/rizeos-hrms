@@ -47,10 +47,10 @@ const Employees = () => {
     e.preventDefault();
     try {
       if (editingEmployee) {
-        await axios.put(`http://localhost:5000/api/employees/${editingEmployee._id}`, formData);
+        await axios.put(`https://rizeos-api.onrender.com/api/employees/${editingEmployee._id}`, formData);
         toast.success('Employee updated successfully');
       } else {
-        await axios.post('http://localhost:5000/api/employees', formData);
+        await axios.post('https://rizeos-api.onrender.com/api/employees', formData);
         toast.success('Employee added successfully');
       }
       setShowModal(false);
@@ -79,7 +79,7 @@ const Employees = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this employee?')) {
       try {
-        await axios.delete(`http://localhost:5000/api/employees/${id}`);
+        await axios.delete(`https://rizeos-api.onrender.com/api/employees/${id}`);
         toast.success('Employee deleted successfully');
         fetchEmployees();
       } catch (error) {
@@ -299,3 +299,4 @@ const Employees = () => {
 
 
 export default Employees;
+
