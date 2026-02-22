@@ -65,7 +65,7 @@ const Dashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/dashboard/stats');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/dashboard/stats');
       setStats(response.data);
     } catch (error) {
       toast.error('Failed to fetch dashboard data');
@@ -76,7 +76,7 @@ const Dashboard = () => {
 
   const fetchWeeklyActivity = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/dashboard/weekly-activity');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/dashboard/weekly-activity');
       setWeeklyData(response.data);
     } catch (error) {
       console.error('Error fetching weekly activity:', error);
@@ -95,7 +95,7 @@ const Dashboard = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/employees');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/employees');
       setEmployees(response.data);
     } catch (error) {
       console.error('Error fetching employees:', error);
@@ -104,7 +104,7 @@ const Dashboard = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/tasks');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -445,5 +445,6 @@ const Dashboard = () => {
     </div>
   );
 };
+
 
 export default Dashboard;
