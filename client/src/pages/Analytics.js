@@ -21,8 +21,8 @@ const Analytics = () => {
   const fetchData = async () => {
     try {
       const [employeesRes, tasksRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/employees'),
-        axios.get('http://localhost:5000/api/tasks')
+        axios.get('https://rizeos-api.onrender.com/api/employees'),
+        axios.get('https://rizeos-api.onrender.com/api/tasks')
       ]);
       
       console.log('Employees fetched:', employeesRes.data);
@@ -312,5 +312,6 @@ const Analytics = () => {
     </div>
   );
 };
+
 
 export default Analytics;
