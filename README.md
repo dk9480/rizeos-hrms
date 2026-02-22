@@ -191,3 +191,39 @@ rizeos-hrms/
 │
 ├── README.md
 └── package.json
+
+
+```
+## 🧠 AI Features Implemented
+
+### 1. Productivity Score
+- Calculates employee productivity based on task completion  
+- Real-time updates when tasks are completed  
+
+### 2. Skill Gap Detection
+- Compares employee skills against role requirements  
+- Identifies missing skills for career development  
+
+### 3. Smart Task Assignment
+- Recommends best employee for tasks based on skills and workload  
+- Optimizes overall team productivity  
+
+### 4. Performance Trend Prediction
+- Analyzes historical performance data  
+- Predicts future performance trends
+
+## 🔐 API Endpoints
+
+| Method | Endpoint                     | Description                    |
+|---------|------------------------------|--------------------------------|
+| POST    | /api/auth/register           | Register new company           |
+| POST    | /api/auth/login              | User login                     |
+| GET     | /api/employees               | Get all employees              |
+| POST    | /api/employees               | Add new employee               |
+| GET     | /api/tasks                   | Get all tasks                  |
+| POST    | /api/tasks                   | Create new task                |
+| PUT     | /api/tasks/:id/status        | Update task status             |
+| GET     | /api/dashboard/stats         | Get dashboard statistics       |
+| GET     | /api/notifications           | Get user notifications         |
+
+
