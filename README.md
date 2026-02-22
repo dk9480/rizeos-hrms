@@ -227,3 +227,52 @@ rizeos-hrms/
 | GET     | /api/notifications           | Get user notifications         |
 
 
+## 🚀 Deployment
+
+### 🔧 Backend (Render)
+
+1. Push backend code to GitHub  
+2. Connect the repository to **Render**  
+3. Set the **root directory** to `server`  
+4. Add required **environment variables**  
+5. Deploy the service  
+
+---
+
+### 🎨 Frontend (Vercel)
+
+1. Connect the GitHub repository to **Vercel**  
+2. Set the **root directory** to `client`  
+3. Deploy — Vercel will build and deploy automatically  
+
+---
+
+## 📄 License
+
+This project is created for the **RizeOS Core Team Internship assessment**.
+
+---
+
+## 👨‍💻 Author
+
+**D K Vijendra Kumar**  
+
+- GitHub: [@dk9480](https://github.com/dk9480)
+
+---
+
+## 🙏 Acknowledgments
+
+- RizeOS Team for the opportunity  
+- MongoDB Atlas for database hosting  
+- Render and Vercel for free hosting  
+- All open-source libraries used  
+
+---
+
+<div align="center">
+  <h3>⭐ Star this repository if you found it helpful!</h3>
+  <p>Built with ❤️ for the RizeOS Core Team Internship</p>
+</div>
+
+
