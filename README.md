@@ -107,11 +107,6 @@ cd rizeos-hrms
 
 ```
 
-## 🚀 Setup & Installation Guide
-
-Follow the steps below to run the project locally.
-
----
 
 ## 🔧 Backend Setup
 
