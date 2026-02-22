@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base API configuration
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://rizeos-api.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -33,5 +33,6 @@ API.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
 
 export default API;
