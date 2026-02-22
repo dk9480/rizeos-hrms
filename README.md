@@ -143,6 +143,51 @@ npm run dev
 cd client
 npm install
 npm start
+```
 The app will open at:
 http://localhost:3000
 ```
+
+## 📁 Project Structure
+
+rizeos-hrms/
+├── server/
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Employee.js
+│   │   ├── Task.js
+│   │   └── Notification.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── employees.js
+│   │   ├── tasks.js
+│   │   ├── dashboard.js
+│   │   ├── notifications.js
+│   │   └── users.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── .env
+│   └── server.js
+│
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── utils/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── employees.png
+│   ├── tasks.png
+│   ├── analytics.png
+│   ├── profile.png
+│   └── notifications.png
+│
+├── README.md
+└── package.json
