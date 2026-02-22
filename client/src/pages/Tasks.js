@@ -23,7 +23,7 @@ const Tasks = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/tasks');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/tasks');
       console.log('Tasks fetched:', response.data);
       setTasks(response.data);
     } catch (error) {
@@ -35,7 +35,7 @@ const Tasks = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/employees');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/employees');
       setEmployees(response.data);
     } catch (error) {
       console.error('Error fetching employees:', error);
@@ -45,7 +45,7 @@ const Tasks = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/tasks', formData);
+      await axios.post('https://rizeos-api.onrender.com/api/tasks', formData);
       toast.success('Task created successfully');
       setShowModal(false);
       setFormData({ title: '', description: '', assignedTo: '', priority: 'medium', dueDate: '' });
@@ -58,7 +58,7 @@ const Tasks = () => {
   const updateTaskStatus = async (taskId, status) => {
     try {
       console.log('Updating task:', taskId, 'to status:', status);
-      const response = await axios.put(`http://localhost:5000/api/tasks/${taskId}/status`, { status });
+      const response = await axios.put(`https://rizeos-api.onrender.com/api/tasks/${taskId}/status`, { status });
       console.log('Update response:', response.data);
       toast.success(`Task marked as ${status}`);
       fetchTasks(); // Refresh the list
@@ -264,5 +264,6 @@ const Tasks = () => {
     </div>
   );
 };
+
 
 export default Tasks;
