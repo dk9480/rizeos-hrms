@@ -18,7 +18,7 @@ const Navbar = () => {
   const fetchNotifications = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/notifications');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/notifications');
       setNotifications(response.data);
       const unread = response.data.filter(n => !n.read).length;
       setUnreadCount(unread);
@@ -32,7 +32,7 @@ const Navbar = () => {
   // Fetch unread count
   const fetchUnreadCount = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/notifications/unread-count');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/notifications/unread-count');
       setUnreadCount(response.data.count);
     } catch (error) {
       console.error('Error fetching unread count:', error);
@@ -42,7 +42,7 @@ const Navbar = () => {
   // Mark as read
   const markAsRead = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/notifications/${id}/read`);
+      await axios.put(`https://rizeos-api.onrender.com/api/notifications/${id}/read`);
       setNotifications(prev => 
         prev.map(n => n._id === id ? { ...n, read: true } : n)
       );
@@ -55,7 +55,7 @@ const Navbar = () => {
   // Mark all as read
   const markAllAsRead = async () => {
     try {
-      await axios.put('http://localhost:5000/api/notifications/read-all');
+      await axios.put('https://rizeos-api.onrender.com/api/notifications/read-all');
       setNotifications(prev => prev.map(n => ({ ...n, read: true })));
       setUnreadCount(0);
       toast.success('All notifications marked as read');
@@ -238,5 +238,6 @@ const Navbar = () => {
     </header>
   );
 };
+
 
 export default Navbar;
