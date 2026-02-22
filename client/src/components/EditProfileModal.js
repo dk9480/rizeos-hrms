@@ -22,7 +22,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onUpdate }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.put('http://localhost:5000/api/users/profile', formData);
+      const response = await axios.put('https://rizeos-api.onrender.com/api/users/profile', formData);
       toast.success('Profile updated successfully');
       onUpdate(response.data.user);
       onClose();
@@ -123,5 +123,6 @@ const EditProfileModal = ({ isOpen, onClose, user, onUpdate }) => {
     </div>
   );
 };
+
 
 export default EditProfileModal;
