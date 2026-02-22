@@ -86,3 +86,5 @@ RizeOS is a next-generation HRMS platform that combines **AI-powered workforce i
 | **Backend API** | [https://rizeos-api.onrender.com](https://rizeos-api.onrender.com) |
 
 ### Test Credentials
+Email: admin@techsolutions.com
+Password: Password123!
