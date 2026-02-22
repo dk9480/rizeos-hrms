@@ -25,7 +25,7 @@ const Employees = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/employees');
+      const response = await axios.get('https://rizeos-api.onrender.com/api/employees');
       setEmployees(response.data);
     } catch (error) {
       toast.error('Failed to fetch employees');
@@ -296,5 +296,6 @@ const Employees = () => {
     </div>
   );
 };
+
 
 export default Employees;
